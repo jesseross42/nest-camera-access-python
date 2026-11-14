@@ -4,7 +4,7 @@
 
 **Blocked by:** 02
 
-**Status:** ready-for-human (PR open; real Camera test not yet run)
+**Status:** resolved
 
 - [x] Returns one Frame.
 - [x] The Stream is always stopped at Google, even on error or timeout.
@@ -12,3 +12,7 @@
 - [x] Docstring and design doc say it is slow.
 - [x] Unit tests with the fake-Google kit; `real_camera` test written but not yet run.
 - [x] `make check` and `make test` pass.
+
+## Comments
+
+- 2026-11-14: Merged to `main`. `make test_real_cameras` passed on real Cameras on 2026-10-07; `make check` and `make test` (149 tests) pass.

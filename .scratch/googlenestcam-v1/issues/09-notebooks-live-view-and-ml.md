@@ -4,7 +4,7 @@
 
 **Blocked by:** 06, 08
 
-**Status:** ready-for-human
+**Status:** ready-for-human (run the notebook with a real Camera)
 
 - [x] Saved with no outputs, Tokens or Camera IDs.
 - [ ] Each runs top to bottom with a real Camera.

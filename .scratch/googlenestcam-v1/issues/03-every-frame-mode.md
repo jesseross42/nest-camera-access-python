@@ -4,7 +4,7 @@
 
 **Blocked by:** 02
 
-**Status:** ready-for-human (PR open)
+**Status:** resolved
 
 - [x] `frames="latest"` stays the default; `frames="all"` gives every Frame in order.
 - [x] `queue_size` can be set.
@@ -12,3 +12,7 @@
 - [x] `on_full="drop_oldest"` drops the oldest, warns once, and `s.dropped` gives the count.
 - [x] Unit tests use the fake-Google kit sending fast and a slow reader.
 - [x] `make check` and `make test` pass.
+
+## Comments
+
+- 2026-11-14: Merged to `main`. `make check` and `make test` (149 tests) pass.

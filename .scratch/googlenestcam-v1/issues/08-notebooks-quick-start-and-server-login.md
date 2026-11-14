@@ -4,7 +4,7 @@
 
 **Blocked by:** 05
 
-**Status:** resolved (needs a human check with a real Camera)
+**Status:** ready-for-human (run the notebooks with a real Camera)
 
 - [x] `pip install googlenestcam` does not install notebook tools.
 - [x] `pip install googlenestcam[notebooks]` is enough to run both notebooks.
