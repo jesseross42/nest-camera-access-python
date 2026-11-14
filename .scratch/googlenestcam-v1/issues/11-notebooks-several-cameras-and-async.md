@@ -4,7 +4,7 @@
 
 **Blocked by:** 08
 
-**Status:** ready-for-human
+**Status:** ready-for-human (run the notebook with a real Camera)
 
 - [x] Saved with no outputs, Tokens or Camera IDs.
 - [x] Notebook 6 shows two Streams open at the same time.

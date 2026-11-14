@@ -4,7 +4,7 @@
 
 **Blocked by:** none
 
-**Status:** ready-for-human
+**Status:** resolved
 
 - [x] Stream Frames have the asked size; reconnects keep it.
 - [x] Snapshot Frames have the asked size.
@@ -14,3 +14,7 @@
 - [x] Docs: design.md and GLOSSARY.md.
 - [x] Unit tests.
 - [x] `make check` and `make test` pass.
+
+## Comments
+
+- 2026-11-14: Merged to `main`. `make check` and `make test` (149 tests) pass.

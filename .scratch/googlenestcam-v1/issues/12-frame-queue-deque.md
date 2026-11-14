@@ -4,7 +4,7 @@
 
 **Blocked by:** 03
 
-**Status:** ready-for-human (PR open)
+**Status:** resolved
 
 - [x] Latest mode is a deque with `maxlen=1`; a new Frame quietly replaces an unread one.
 - [x] Every-frame mode is a deque with `maxlen=queue_size`.
@@ -18,3 +18,5 @@
 ## Comments
 
 `queue.Queue` was not used: it cannot drop the oldest item, and it has no way to wake a waiting reader on close before Python 3.13 (`Queue.shutdown`). A deque plus one `threading.Condition` keeps both modes.
+
+- 2026-11-14: Merged to `main`. `make check` and `make test` (149 tests) pass.

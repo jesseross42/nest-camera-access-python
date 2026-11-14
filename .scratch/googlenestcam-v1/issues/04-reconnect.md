@@ -4,7 +4,7 @@
 
 **Blocked by:** 02
 
-**Status:** ready-for-human (PR open)
+**Status:** resolved
 
 - [x] `retries` has a sensible default and can be set.
 - [x] After a drop, Frames start again with no change to the developer's loop.
@@ -13,3 +13,7 @@
 - [x] The old session is stopped at Google when a new one starts.
 - [x] Unit tests drop the fake peer and check both paths.
 - [x] `make check` and `make test` pass.
+
+## Comments
+
+- 2026-11-14: Merged to `main`. `make test_real_cameras` passed on real Cameras on 2026-10-07; `make check` and `make test` (149 tests) pass.

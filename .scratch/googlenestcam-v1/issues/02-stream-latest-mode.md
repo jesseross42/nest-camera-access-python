@@ -8,7 +8,7 @@ Also builds the **fake-Google test kit** later tickets reuse: a fake httpx trans
 
 **Blocked by:** 01
 
-**Status:** ready-for-human (PR open; real Camera test not yet run)
+**Status:** resolved
 
 - [x] `Frame` has `.image` and `.time`; `np.asarray(frame)` works.
 - [x] Latest mode always gives the newest Frame; old ones are skipped.
@@ -18,9 +18,11 @@ Also builds the **fake-Google test kit** later tickets reuse: a fake httpx trans
 - [x] Works in a plain script and inside a running event loop (Jupyter).
 - [x] `stream_async()` gives the same Frames.
 - [x] Unit tests run with no internet, using the fake-Google kit; the fake answer has a blank candidate foundation.
-- [ ] `real_camera` test reads a few Frames from a real Camera.
+- [x] `real_camera` test reads a few Frames from a real Camera.
 - [x] `make check` and `make test` pass.
 
 ## Comments
 
 - Built in branch `claude/implement-spec-qbf2f2` on top of the Camera list PR. The `real_camera` test is written but needs Jesse to run `make test_real_cameras`.
+
+- 2026-11-14: Merged to `main`. `make test_real_cameras` passed on real Cameras on 2026-10-07; `make check` and `make test` (149 tests) pass.

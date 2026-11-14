@@ -4,16 +4,20 @@
 
 **Blocked by:** None (can start immediately)
 
-**Status:** ready-for-agent
+**Status:** resolved
 
-- [ ] `list_cameras()` returns every Camera that supports WebRTC, each with `.name` and `.id`.
-- [ ] RTSP-only Cameras and non-camera devices are left out.
-- [ ] Name falls back to the room name when the custom name is empty.
-- [ ] `camera()` finds a Camera by short ID, full `enterprises/.../devices/...` ID, or name.
-- [ ] Unknown name: clear error that lists the names that exist.
-- [ ] Two Cameras with the same name: clear error that lists their IDs.
-- [ ] No Token: the existing `on_missing_token` behaviour applies (Login or `MissingTokenError`).
-- [ ] Google errors become a package error with Google's message.
-- [ ] Sync call works inside a running event loop (as in Jupyter).
-- [ ] Unit tests through the public API with a fake httpx transport; one `real_camera` test.
-- [ ] `make check` and `make test` pass.
+- [x] `list_cameras()` returns every Camera that supports WebRTC, each with `.name` and `.id`.
+- [x] RTSP-only Cameras and non-camera devices are left out.
+- [x] Name falls back to the room name when the custom name is empty.
+- [x] `camera()` finds a Camera by short ID, full `enterprises/.../devices/...` ID, or name.
+- [x] Unknown name: clear error that lists the names that exist.
+- [x] Two Cameras with the same name: clear error that lists their IDs.
+- [x] No Token: the existing `on_missing_token` behaviour applies (Login or `MissingTokenError`).
+- [x] Google errors become a package error with Google's message.
+- [x] Sync call works inside a running event loop (as in Jupyter).
+- [x] Unit tests through the public API with a fake httpx transport; one `real_camera` test.
+- [x] `make check` and `make test` pass.
+
+## Comments
+
+- 2026-11-14: Merged to `main`. `make test_real_cameras` passed on real Cameras on 2026-10-07; `make check` and `make test` (149 tests) pass.
